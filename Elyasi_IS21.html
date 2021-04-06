@@ -2,7 +2,33 @@
 <html>
 <body>
 <p> <b> <font size="+2"> Audio samples from "Flavored Tacotron: Conditional Learning for Prosodic-linguistic Features" </font> </b> //
-<b> Authors:</b> Mahsa Elyasi, Gaurav Bharaj </p>
+<b> Authors:</b> Mahsa Elyasi, Gaurav Bharaj //
+<b> Abstract:</b>
+Neural sequence-to-sequence text-to-speech synthesis (TTS),
+such as Tacotron-2, transforms text into high-quality speech.
+However, generating speech with natural prosody still remains
+a challenge. Yasuda et. al. show that unlike natural speech,
+Tacotron-2’s encoder doesn’t fully represent prosodic features
+(e.g. syllable stress in English) from characters, and result in flat
+fundamental frequency variations. //
+In this work, we propose a novel carefully designed strategy
+for conditioning Tacotron-2 on two fundamental prosodic
+features in English – stress syllable and pitch accent, that help
+achieve more natural prosody. To this end, we use of a classifier
+to learn these features in an end-to-end fashion, and apply feature
+conditioning at three parts of Tacotron-2’s Text-To-Mel Spectrogram:
+pre-encoder, post-encoder, and intra-decoder. Further,
+we show that jointly conditioned features at pre-encoder and
+intra-decoder stages result in prosodically natural synthesized
+speech (vs. Tacotron-2), and allows the model to produce speech
+with more accurate pitch accent and stress patterns. //
+Quantitative evaluations show that our formulation achieves
+higher fundamental frequency contour correlation, and lower
+Mel Cepstral Distortion measure between synthesized and natural
+speech. And subjective evaluation shows that the proposed
+method’s Mean Opinion Score of 4.14 fairs higher than baseline
+Tacotron-2, 3.91, when compared against natural speech
+(LJSpeech corpus), 4.28. </p>
 ​
 ​
 <table>
